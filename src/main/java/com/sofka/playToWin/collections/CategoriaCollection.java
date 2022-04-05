@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 @AllArgsConstructor
 @NoArgsConstructor
-public class Categoria {
+public class CategoriaCollection {
     @Id
     private String id;
     private String nombreCategoria;
-    private String nivelDificultad;
+    private int nivelDificultad;
 
 }

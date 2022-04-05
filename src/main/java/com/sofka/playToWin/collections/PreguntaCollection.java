@@ -10,11 +10,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 @AllArgsConstructor
 @NoArgsConstructor
-public class Respuesta {
+public class PreguntaCollection {
     @Id
     private String id;
-    private String nombreRespuesta;
-    private String idPregunda;
-    private boolean esRespuestaCorrecta;
+    private String nombrePregunta;
+    private String idCategoria;
 
 }
