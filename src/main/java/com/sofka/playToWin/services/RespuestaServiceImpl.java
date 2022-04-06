@@ -13,7 +13,16 @@ public class RespuestaServiceImpl implements RespuestaService {
 
 
     @Override
-    public RespuestaCollection crearRespuesta(RespuestaCollection respuesta) {
-        return respuestaRepository.save(respuesta);
+    public RespuestaCollection crearRespuesta(RespuestaCollection respuestaCollection) {
+        return respuestaRepository.save(respuestaCollection);
+    }
+
+    @Override
+    public boolean evaluarRespuesta(RespuestaCollection respuestaCollection) {
+        Boolean esCorrecta=false;
+        if(respuestaCollection.isEsRespuestaCorrecta()) {
+            esCorrecta = true;
+        }
+        return esCorrecta;
     }
 }

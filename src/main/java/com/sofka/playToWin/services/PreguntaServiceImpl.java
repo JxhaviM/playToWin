@@ -12,7 +12,7 @@ public class PreguntaServiceImpl implements PreguntaService{
     private  final PreguntaRepository preguntaRepository;
 
     @Override
-    public PreguntaCollection crearPregunta(PreguntaCollection pregunta) {
-        return preguntaRepository.save(pregunta);
+    public PreguntaCollection crearPregunta(PreguntaCollection preguntaCollection) {
+        return preguntaRepository.save(preguntaCollection);
     }
 }
