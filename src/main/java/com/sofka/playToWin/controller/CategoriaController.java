@@ -15,9 +15,9 @@ public class CategoriaController {
     private final CategoriaService categoriaService;
 
     @PostMapping("/agregar")
-    public String crearCategoria(@RequestBody CategoriaCollection categoria){
+    public Boolean crearCategoria(@RequestBody CategoriaCollection categoria){
         categoriaService.crearCategoria(categoria);
-        return "Nueva Categoria Creada";
+        return true;
 
     }
 
