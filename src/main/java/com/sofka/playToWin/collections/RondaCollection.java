@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Document
@@ -14,11 +14,13 @@ import java.util.ArrayList;
 public class RondaCollection {
     @Id
     private String id;
-    private String idJugador;
+    private String nombreJugador;
     private double premioAcumulado;
-    private String nivelDificultad;
-    private String idPregunda;
-    private ArrayList<RespuestaCollection> idRespuesta;
+    private CategoriaCollection categoria;
+    private PreguntaCollection pregunta;
+    private List<RespuestaCollection> respuestas;
+    private boolean pasoUltimoNivel;
+
 
 
 }

@@ -14,7 +14,7 @@ public class RespuestaCollection {
     @Id
     private String id;
     private String nombreRespuesta;
-    private String idPregunda;
+    private String idPregunta;
     private boolean esRespuestaCorrecta;
 
 }
