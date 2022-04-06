@@ -14,5 +14,6 @@ public class JugadorCollection {
     @Id
     private String id;
     private String nombre;
+    //private String contrasena;
 
 }

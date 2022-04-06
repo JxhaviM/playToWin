@@ -4,6 +4,6 @@ import com.sofka.playToWin.collections.PreguntaCollection;
 
 public interface PreguntaService  {
 
-    public PreguntaCollection crearPregunta(PreguntaCollection pregunta);
+    public PreguntaCollection crearPregunta(PreguntaCollection preguntaCollection);
 
 }

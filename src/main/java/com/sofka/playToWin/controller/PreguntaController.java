@@ -25,7 +25,7 @@ public class PreguntaController {
         PreguntaCollection preguntaCollection=preguntaService.crearPregunta(crearPreguntaDto.getPregunta());
         String idPreguntaCollection=preguntaCollection.getId();
         crearPreguntaDto.getRespuestas().forEach(respuestaCollection -> {
-           respuestaCollection.setIdPregunda(idPreguntaCollection);
+           respuestaCollection.setIdPregunta(idPreguntaCollection);
            respuestaService.crearRespuesta(respuestaCollection);
         });
 

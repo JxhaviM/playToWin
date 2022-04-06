@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CategoriaRepository extends MongoRepository<CategoriaCollection, String> {
 
+    CategoriaCollection findByNivelDificultad(int nivelDeDificultad);
+
 
 
 }

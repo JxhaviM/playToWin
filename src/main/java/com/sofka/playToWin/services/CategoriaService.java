@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 
 public interface CategoriaService {
-    public CategoriaCollection crearCategoria(CategoriaCollection categoria);
+    public CategoriaCollection crearCategoria(CategoriaCollection categoriaCollection);
 
 
 }
